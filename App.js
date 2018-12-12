@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { List, ListItem } from "react-native-elements";
+import SearchListView from "./components/SearchListView"
+import SongCardView from "./components/SongCardView";
 
 export default class App extends React.Component {
 
@@ -31,21 +33,8 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <List>
-        <FlatList
-          data={this.state.data}
-          renderItem={({ item }) => (
-            <ListItem
-              keyExtractor = {item => item.key}
-              title = {item.f}
-              subtitle = {item.l}
-              roundAvatar
-              avatar = {item.image}
-              onPress = {() => alert('clicked')}
-            />
-          )}
-        />
-      </List>
+    /*  <SearchListView data = {this.state.data}/>*/
+        <SongCardView song='HotDog'/>
     );
   }
 
