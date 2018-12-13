@@ -31,6 +31,7 @@ export default class App extends React.Component {
                 {key: 'first', title: 'Home'},
                 {key: 'second', title: 'Library'},
             ],
+        }
 
         let dataManager = new DataManager();
     }
