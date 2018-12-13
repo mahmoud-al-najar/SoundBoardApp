@@ -30,7 +30,7 @@ class SearchListView extends React.Component {
     renderHeader = () => {
         return (
             <SearchBar
-                placeholder="Search a sound..."
+                placeholder="Search a sound"
                 round
                 onChangeText={text => this.searchFilterFunction(text)}
                 autoCorrect={false}
