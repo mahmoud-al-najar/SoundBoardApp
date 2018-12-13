@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Dimensions, ScrollView } from 'react-native';
 import SearchListView from "./components/SearchListView"
 import CardListView from "./components/CardListView";
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 import DataManager from './DataManager';
 import ListViewCurrentlyPlaying from './components/ListViewCurrentlyPlaying';
+import GridPanel from './components/GridPanel';
 
 export default class App extends React.Component {
 
@@ -14,19 +15,25 @@ export default class App extends React.Component {
         let dataManager = new DataManager();
 
         this.state = {
-            data: dataManager.soundsArray,
+            dataManager: dataManager,
             index: 0,
             FirstRoute: () => (
                 <View style={{ flex: 1, flexDirection: 'row' }}>
                     <View style={{ flex: 0.4 }}>
-                        <SearchListView data={this.state.data} /></View>
-                    <View style={{ flex: 0.6 }}>
-                        <ListViewCurrentlyPlaying name = 'Currently Playing' data={this.state.data} /></View>
+                        <SearchListView data={this.state.dataManager.soundsArray} /></View>
+                    <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
+                        {/* <ListViewCurrentlyPlaying name = 'Currently Playing' data={this.state.data} /></View> */}
+                        <ListViewCurrentlyPlaying name = 'Currently Playing' data={[]} style={{ flex: 0.3}}/>
+                        <CardListView name ='Favorites' data={this.state.dataManager.favoritesArray} />    
+                        <CardListView name ='Suggestions' data={this.state.dataManager.suggestionsArray} />    
+                        {/* <GridPanel style={{ flex: 0.3}}/>
+                        <GridPanel style={{ flex: 0.3}}/> */}
+                    </ScrollView>
                 </View>),
 
             SecondRoute: () => (
                 <View style={{ flex: 1 }}>
-                    <CardListView name ='Library' data={this.state.data} />
+                    <CardListView name ='Library' data={this.state.dataManager.soundsArray} />
                 </View>
             ),
             routes: [

@@ -22,19 +22,13 @@ class DataManager {
             );            
         });
 
-        this.favoritesArray = this.db['favorites'];
-        this.favoritesArray.forEach(f => {
-            f.sounds = this.soundsArray.filter(s => 
-                s.url === f.url
-            );
-        });
+        let favorites = this.db['favorites'];
+        this.favoritesArray = [];
+        favorites.forEach(f => {this.favoritesArray.push(this.soundsArray.find(s => s.url === f.url));});
         
-        this.suggestionsArray = this.db['favorites'];
-        this.suggestionsArray.forEach(f => {
-            f.sounds = this.soundsArray.filter(s => 
-                s.url === f.url
-            );
-        });
+        let suggestions = this.db['favorites'];
+        this.suggestionsArray = [];
+        suggestions.forEach(f => {this.suggestionsArray.push(this.soundsArray.find(s => s.url === f.url));});
 
     }
 }

@@ -26,46 +26,7 @@ class GridPanel extends React.Component {
             </View>
             <View style={styles.box}>
             </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
-            <View style={styles.box}>
-            </View>
+            
           </View>
 		);
     }
@@ -81,9 +42,9 @@ const styles = StyleSheet.create({
 
   box : {
     backgroundColor : 'red',
-    height: 80,
+    height: 140,
     margin: 10,
-    width: 80
+    width: 140
   }
 });
 

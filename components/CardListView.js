@@ -12,42 +12,94 @@ class CardListView extends React.Component {
         this.state = {
             data: props.data,
             position: 0.3,
-            name:props.name,
+            name: props.name,
         }
     }
 
+    // let views = [];
+
+    // for(let j=0;j < this.props.cellCount; j++) {
+    //     views.push(
+    //         <View key={j} style={styles.box}>
+    //             <View style={styles.innerBox}/>
+    //         </View>
+    //     )
+    // }
+
+    // return (
+    //     <View {...this.props}>
+    //         <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
+    //             { views }
+    //         </View>
+    //     </View>
+    // );
+
+
+    // renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}    
     render() {
+
+        let views = [];
+
+        // for (let j = 0; j < this.state.data.length; j++) {
+        this.state.data.forEach(item => {
+            // item.key = item.url;
+            views.push(
+                <Card style={styles.card} key={item.url}>
+                    <TouchableOpacity onPress={() => {
+                        item.audio.playAudio();
+                        this.setState({ position: (item.audio.position * 100) / item.audio.duration });
+                    }}>
+                        <Text style={{ padding: 10, fontSize: 14 }}>
+                            {item.name}
+                        </Text>
+                    </TouchableOpacity>
+                </Card>
+            )
+        });
+
+        // }
+
         return (
-            <SuperGridSectionList
-                keyExtractor={(item, index) => item.key}
-                sections={[
-                    { title: this.state.name, data: this.state.data },
 
-                ]}
-                renderItem={({ item }) => (
-                    <Card
-                        style={styles.card}>
-                        <TouchableOpacity onPress={() => {
-                                item.audio.playAudio();
-                                this.setState({position: (item.audio.position * 100) / item.audio.duration});
-                            }
-                        }>
 
-                            <Text style={{ padding: 10, fontSize: 14 }}>
-                                {item.name}
-                            </Text>
 
-                        </TouchableOpacity>
-                    </Card> 
-                )}
-                renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-            />
+            // return (
+            <View {...this.props}>
+            <Text style={styles.sectionHeader}>{this.state.name}</Text>
+            <View style={{
+                alignItems: 'center',
+                // justifyContent: 'center', 
+                flexDirection: 'row',
+                flexWrap: 'wrap'
+            }}>
+                {views}
+            </View>
+            </View>
+            // );
+            // <View>
+            //     renderItem={({ item }) => (
+            //         <Card
+            //             style={styles.card}>
+            //             <TouchableOpacity onPress={() => {
+            //                 item.audio.playAudio();
+            //                 this.setState({ position: (item.audio.position * 100) / item.audio.duration });
+            //             }
+            //             }>
+
+            //                 <Text style={{ padding: 10, fontSize: 14 }}>
+            //                     {item.name}
+            //                 </Text>
+
+            //             </TouchableOpacity>
+            //         </Card>
+            //     )}
+            // </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-   sectionHeader: {
+    sectionHeader: {
         paddingTop: 12,
         paddingLeft: 10,
         paddingRight: 10,

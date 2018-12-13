@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // height: 140,
-        // width: 140,
+        height: 140,
+        width: 140,
         elevation: 1,
         shadowColor: 'rgb(50,50,50)',
     }
