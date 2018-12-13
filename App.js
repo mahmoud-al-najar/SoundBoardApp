@@ -6,6 +6,7 @@ import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 import DataManager from './DataManager';
 import ListViewCurrentlyPlaying from './components/ListViewCurrentlyPlaying';
 import GridPanel from './components/GridPanel';
+import SectionedCardListView from './components/SectionedCardListView';
 
 export default class App extends React.Component {
 
@@ -22,19 +23,17 @@ export default class App extends React.Component {
                     <View style={{ flex: 0.4 }}>
                         <SearchListView data={dataManager.soundsArray} favorites={dataManager.favoritesArray} /></View>
                     <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
-                        {/* <ListViewCurrentlyPlaying name = 'Currently Playing' data={this.state.data} /></View> */}
                         <ListViewCurrentlyPlaying name = 'Currently Playing' data={[]} style={{ flex: 0.3}}/>
                         <CardListView name ='Favorites' data={this.state.dataManager.favoritesArray} />    
-                        {/* <CardListView name ='Suggestions' data={this.state.dataManager.suggestionsArray} />     */}
-                        {/* <GridPanel style={{ flex: 0.3}}/>
-                        <GridPanel style={{ flex: 0.3}}/> */}
                     </ScrollView>
                 </View>),
 
             SecondRoute: () => (
-                <View style={{ flex: 1 }}>
-                    <CardListView name ='Library' data={this.state.dataManager.soundsArray} />
-                </View>
+                <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
+                    <CardListView name ='Cat1' data={this.state.dataManager.categoriesArray[0].sounds} />    
+                    <CardListView name ='Cat2' data={this.state.dataManager.categoriesArray[1].sounds} />    
+                    <CardListView name ='Cat3' data={this.state.dataManager.categoriesArray[2].sounds} />    
+                </ScrollView>
             ),
             routes: [
                 { key: 'first', title: 'Home' },
