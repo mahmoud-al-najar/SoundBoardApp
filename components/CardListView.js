@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Content, Card, CardItem, Left, Right, Body, Thumbnail, Spinner, Icon } from 'native-base';
-import { StyleSheet, Text, View, SectionList, FlatList } from 'react-native';
+import { StyleSheet, Text, View, SectionList, FlatList, TouchableOpacity } from 'react-native';
 import SingleCardView from 'react-native-simple-card';
 import * as Progress from 'react-native-progress';
 
@@ -13,18 +13,19 @@ class CardListView extends React.Component {
 
         this.state = {
             data: props.data,
+            position: 0.3,
         }
     }
 
     render() {
         return (
             <SuperGridSectionList
+                keyExtractor={(item, index) => item.key}
                 itemDimension={130}
                 sections={[
                     { title: 'Category 1', data: this.state.data },
                     { title: 'Category 2', data: this.state.data },
                     { title: 'Category 3', data: this.state.data },
-
                 ]}
 
                 style={styles.gridView}
@@ -32,27 +33,29 @@ class CardListView extends React.Component {
                     <Card
                         elevation={1}
                         shadowColor="rgb(50,50,50)"
-                        shadowOpacity={1}
+                        shadowOpacity={1} 
                         marginTop={100}
                         height={150}
                         width={150}>
-                        <View style={styles.item}>
+                        <TouchableOpacity style={styles.item} onPress={() => {
+                                item.audio.playAudio();
+                                this.setState({position: (item.audio.position * 100) / item.audio.duration});
+                            }
+                        }>
 
-                            <Text style={{ padding: 10, fontSize: 18 }}>
-                                {item.f}
+                            <Text style={{ padding: 10, fontSize: 14 }}>
+                                {item.name}
                             </Text>
 
-                            <Progress.Bar progress={0.3} width={125} />
-                        </View>
-                    </Card>
+                            {/* <Progress.Bar progress={(this.state.data[this.state.data.indexOf(item)].audio.position * 100) / this.state.data[this.state.data.indexOf(item)].audio.duration} width={125} /> */}
+                            <Progress.Bar progress={this.state.position} width={125} />
+                        </TouchableOpacity>
+                    </Card> 
                 )}
                 renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
             />
-
         )
     }
-
-
 }
 
 const styles = StyleSheet.create({
