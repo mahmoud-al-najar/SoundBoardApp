@@ -12,7 +12,6 @@ class SearchListView extends React.Component {
             error: null,
         };
         this.arrayholder = props.data;
-
     }
 
     searchFilterFunction = text => {

@@ -5,7 +5,7 @@ import SingleCardView from 'react-native-simple-card';
 import * as Progress from 'react-native-progress';
 import GridView, { SuperGridSectionList } from 'react-native-super-grid';
 
-class CardListView extends React.Component {
+class ListViewCurrentlyPlaying extends React.Component {
     constructor(props) {
         super(props);
 
@@ -37,6 +37,8 @@ class CardListView extends React.Component {
                                 {item.name}
                             </Text>
 
+                            {/* <Progress.Bar progress={(this.state.data[this.state.data.indexOf(item)].audio.position * 100) / this.state.data[this.state.data.indexOf(item)].audio.duration} width={125} /> */}
+                            <Progress.Bar progress={this.state.position} width={125} />
                         </TouchableOpacity>
                     </Card> 
                 )}
@@ -51,6 +53,7 @@ const styles = StyleSheet.create({
         paddingTop: 12,
         paddingLeft: 10,
         paddingRight: 10,
+        // paddingBottom: 5,
         fontSize: 24,
         textAlign: 'center',
         justifyContent: 'center',
@@ -61,11 +64,11 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 140,
-        width: 140,
+        // height: 140,
+        // width: 140,
         elevation: 1,
         shadowColor: 'rgb(50,50,50)',
     }
 });
 
-export default CardListView;
+export default ListViewCurrentlyPlaying;

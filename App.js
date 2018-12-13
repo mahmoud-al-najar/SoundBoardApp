@@ -4,6 +4,7 @@ import SearchListView from "./components/SearchListView"
 import CardListView from "./components/CardListView";
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 import DataManager from './DataManager';
+import ListViewCurrentlyPlaying from './components/ListViewCurrentlyPlaying';
 
 export default class App extends React.Component {
 
@@ -20,7 +21,7 @@ export default class App extends React.Component {
                     <View style={{ flex: 0.4 }}>
                         <SearchListView data={this.state.data} /></View>
                     <View style={{ flex: 0.6 }}>
-                        <CardListView name = 'Currently Playing' data={this.state.data} /></View>
+                        <ListViewCurrentlyPlaying name = 'Currently Playing' data={this.state.data} /></View>
                 </View>),
 
             SecondRoute: () => (
@@ -35,12 +36,9 @@ export default class App extends React.Component {
         }
     }
 
-
     componentDidMount() {
         Expo.ScreenOrientation.allowAsync(Expo.ScreenOrientation.Orientation.LANDSCAPE);
     }
-
-
 
     render() {
         return (
@@ -56,8 +54,4 @@ export default class App extends React.Component {
         );
     }
 
-
 }
-
-
-
