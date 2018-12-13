@@ -20,12 +20,12 @@ export default class App extends React.Component {
             FirstRoute: () => (
                 <View style={{ flex: 1, flexDirection: 'row' }}>
                     <View style={{ flex: 0.4 }}>
-                        <SearchListView data={this.state.dataManager.soundsArray} /></View>
+                        <SearchListView data={dataManager.soundsArray} favorites={dataManager.favoritesArray} /></View>
                     <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
                         {/* <ListViewCurrentlyPlaying name = 'Currently Playing' data={this.state.data} /></View> */}
                         <ListViewCurrentlyPlaying name = 'Currently Playing' data={[]} style={{ flex: 0.3}}/>
                         <CardListView name ='Favorites' data={this.state.dataManager.favoritesArray} />    
-                        <CardListView name ='Suggestions' data={this.state.dataManager.suggestionsArray} />    
+                        {/* <CardListView name ='Suggestions' data={this.state.dataManager.suggestionsArray} />     */}
                         {/* <GridPanel style={{ flex: 0.3}}/>
                         <GridPanel style={{ flex: 0.3}}/> */}
                     </ScrollView>
