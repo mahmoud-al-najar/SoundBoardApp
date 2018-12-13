@@ -75,7 +75,7 @@ class SearchListView extends React.Component {
                                 });
                             }}/>}
 
-                        onPress={() => alert('clicked')}
+                        onPress={() => item.audio.playAudio()}
                     />
                 )}
                 ListHeaderComponent={this.renderHeader}

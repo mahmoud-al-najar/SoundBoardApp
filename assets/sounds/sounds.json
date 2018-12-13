@@ -287,8 +287,8 @@
     {
       "filename": "dog-bark.wav",
       "url": "http://docs.google.com/uc?export=open&id=1fpjJkFjwnPS2-VRoz-weNNTI200WSVtI",
-      "name": "Dor Barking",
-      "icon": "favorite",
+      "name": "Dog Barking",
+      "icon": "play-circle-filled",
       "categories": [
         2
       ],

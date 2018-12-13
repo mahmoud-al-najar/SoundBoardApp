@@ -7,8 +7,6 @@ import {Divider} from "react-native-elements";
 import {TabView, TabBar, SceneMap} from 'react-native-tab-view';
 import DataManager from './DataManager';
 import ListViewCurrentlyPlaying from './components/ListViewCurrentlyPlaying';
-import GridPanel from './components/GridPanel';
-import SectionedCardListView from './components/SectionedCardListView';
 
 export default class App extends React.Component {
 
@@ -40,9 +38,12 @@ export default class App extends React.Component {
             SecondRoute: () => (
 
                 <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
-                    <CardListView name ='Cat1' data={this.state.dataManager.categoriesArray[0].sounds} />    
-                    <CardListView name ='Cat2' data={this.state.dataManager.categoriesArray[1].sounds} />    
-                    <CardListView name ='Cat3' data={this.state.dataManager.categoriesArray[2].sounds} />    
+                    <CardListView name ='Ambiences' data={this.state.dataManager.categoriesArray[0].sounds} />
+                    <CardListView name ='Animals' data={this.state.dataManager.categoriesArray[1].sounds} />
+                    <CardListView name ='People' data={this.state.dataManager.categoriesArray[2].sounds} />
+                    <CardListView name ='Vehicules' data={this.state.dataManager.categoriesArray[3].sounds} />
+                    <CardListView name ='Objects' data={this.state.dataManager.categoriesArray[3].sounds} />
+
                 </ScrollView>
 
             ),
