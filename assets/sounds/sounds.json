@@ -2,13 +2,13 @@
   "sounds": [
     {
       "filename": "airplane-flyby.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1NfO0Enwu6rY1ZZ7lydhzbQsUMccgC4vg",
+      "url": "https://actions.google.com/sounds/v1/transportation/helicopter_by.ogg",
       "name": "Airplane Flyby",
       "categories": [
         1,
         4
       ],
-      "icon": "play-circle-filled",
+      "icon": "flight-takeoff",
       "tags": [
         {
           "name": "aiplane"
@@ -32,7 +32,7 @@
         1,
         3
       ],
-      "icon": "play-circle-filled",
+      "icon": "people-outline",
       "tags": [
         {
           "name": "bar"
@@ -50,13 +50,13 @@
     },
     {
       "filename": "ambience-busy-street.mp3",
-      "url": "http://docs.google.com/uc?export=open&id=1tvBnlwKYwCbiiwGqusM8GLG4nh-ecrmM",
+      "url": "https://actions.google.com/sounds/v1/crowds/voices_on_street_accent.ogg",
       "name": "Busy Street",
       "categories": [
         1,
         4
       ],
-      "icon": "play-circle-filled",
+      "icon": "people",
       "tags": [
         {
           "name": "cars"
@@ -74,27 +74,25 @@
     },
     {
       "filename": "battle-zone.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1K9ftdDwoR8zKW3jMCe68sW0LKCVaqAtc",
-      "name": "Battle Zone",
+      "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
+      "name": "Celebration",
       "categories": [
         1,
         3,
         5
       ],
-      "icon":"play-circle-filled",
+      "icon":"insert-emoticon",
       "tags": [
         {
-          "name": "war"
+          "name": "happy"
         },
         {
-          "name": "gun"
+          "name": "celebrate"
         },
         {
-          "name": "battle"
-        },
-        {
-          "name": "military"
+          "name": "people"
         }
+
       ]
     },
     {
@@ -593,7 +591,7 @@
       "url": "http://docs.google.com/uc?export=open&id=1iyLf92Vf2pJcAfw2lTntQD8jIzDRPfvO"
     },
     {
-      "url": "http://docs.google.com/uc?export=open&id=1K9ftdDwoR8zKW3jMCe68sW0LKCVaqAtc"
+      "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg"
     },
     {
       "url": "http://docs.google.com/uc?export=open&id=1tiv65IoCVcjrBgwaW_WVSKgWVwmEF8-M"

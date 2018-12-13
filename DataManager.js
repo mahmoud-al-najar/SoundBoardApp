@@ -8,8 +8,8 @@ class DataManager {
         this.db = db;
         this.soundsArray = this.db['sounds'];
         this.soundsArray.forEach(s => {
-            //s.audio = new AudioFile(s.filename, s.url);
-            s.audio = new AudioFile(s.filename, 'https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg');
+            s.audio = new AudioFile(s.filename, s.url);
+            //s.audio = new AudioFile(s.filename, 'https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg');
             s.key = s.filename + s.url;
             s.tagsText = '';
             s.tags.forEach(t => s.tagsText += t.name + ' ');

@@ -24,7 +24,7 @@ export default class App extends React.Component {
                     <View style={{ flex: 0.4 }}>
                         <SearchListView data={dataManager.soundsArray} favorites={dataManager.favoritesArray} /></View>
                     <ScrollView style={{ flex: 0.6 , flexDirection: 'column'}}>
-                        <ListViewCurrentlyPlaying name = 'Currently Playing' data={[]} style={{ flex: 0.3}}/>
+
                         <Divider style={{backgroundColor: '#E0E0E0'}}/>
 
                         <CardListView name ='Favorites' data={this.state.dataManager.favoritesArray} />   
@@ -58,6 +58,7 @@ export default class App extends React.Component {
         Expo.ScreenOrientation.allowAsync(Expo.ScreenOrientation.Orientation.LANDSCAPE);
     }
 
+/*  <ListViewCurrentlyPlaying name = 'Currently Playing' data={[]} style={{ flex: 0.3}}/>*/
 
     render() {
         return (
