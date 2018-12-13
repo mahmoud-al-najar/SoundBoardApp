@@ -6,11 +6,19 @@ class SearchListView extends React.Component {
     constructor(props) {
         super(props);
 
+        console.log(props.favorites.length);
+        
+        props.data.forEach(item => {
+            // item.isFavorite = false;
+            if (props.favorites.find(s => s.url === item.url) != undefined) item.isFavorite = true;
+            else item.isFavorite = false;
+            }
+        );
+
         this.state = {
             data: props.data,
             loading: false,
             error: null,
-            iconColor: '#9E9E9E',
         };
         this.arrayholder = props.data;
     }
@@ -52,14 +60,21 @@ class SearchListView extends React.Component {
                             // raised
                             name='star'
                             size={30}
-                            color={this.state.iconColor}
-                            //type='font-awesome'
+                            color={(item.isFavorite) ? '#F9AA25': '#9E9E9E'}
+                            //type='font-awesome' 
                             onPress={() => {
-                                this.setState({iconColor: '#F9A825'}),
-                                    this.forceUpdate();
-
+                                let temp = this.state.data;
+                                temp.forEach(i => {
+                                    if (i.key == item.key){
+                                        
+                                        if (i.isFavorite) i.isFavorite = false;
+                                        else i.isFavorite = true;
+                                        this.setState({data: temp});
+                                        this.forceUpdate();         
+                                    }
+                                });
                             }}/>}
-                        // avatar='../assets/icons/star-empty.png'
+
                         onPress={() => alert('clicked')}
                     />
                 )}
