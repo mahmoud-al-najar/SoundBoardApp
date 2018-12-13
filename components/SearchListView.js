@@ -6,11 +6,6 @@ class SearchListView extends React.Component {
     constructor(props) {
         super(props);
 
-        props.data.forEach(item => {
-                item.image = require('../assets/icons/star-empty.png')
-            }
-        );
-
         this.state = {
             data: props.data,
             loading: false,

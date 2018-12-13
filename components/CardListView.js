@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Content, Card, CardItem, Left, Right, Body, Thumbnail, Spinner, Icon } from 'native-base';
+import { Container, Content, Card, CardItem, Left, Right, Body, Thumbnail, Spinner } from 'native-base';
+import {Icon} from 'react-native-elements'
 import { StyleSheet, Text, View, SectionList, FlatList, TouchableOpacity } from 'react-native';
 import SingleCardView from 'react-native-simple-card';
 import * as Progress from 'react-native-progress';
@@ -45,11 +46,17 @@ class CardListView extends React.Component {
             // item.key = item.url;
             views.push(
                 <Card style={styles.card} key={item.url}>
+                    <Icon
+                        name={item.icon}
+                        color='#00aced'
+                        size = {50}
+
+                    />
                     <TouchableOpacity onPress={() => {
                         item.audio.playAudio();
                         this.setState({ position: (item.audio.position * 100) / item.audio.duration });
                     }}>
-                        <Text style={{ padding: 10, fontSize: 14 }}>
+                        <Text style={{ padding: 10, fontSize: 16 }}>
                             {item.name}
                         </Text>
                     </TouchableOpacity>
@@ -107,6 +114,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
+        color: '#9e9e9e',
         height: 59
     },
     card: {
@@ -115,7 +123,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: 140,
         width: 140,
-        elevation: 1,
+        elevation: 2,
         shadowColor: 'rgb(50,50,50)',
     }
 });

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Content, Card, CardItem, Left, Right, Body, Thumbnail, Spinner, Icon } from 'native-base';
-import { StyleSheet, Text, View, SectionList, FlatList, TouchableOpacity } from 'react-native';
+import {Container, Content, Card, CardItem, Left, Right, Body, Thumbnail, Spinner, Icon} from 'native-base';
+import {StyleSheet, Text, View, SectionList, FlatList, TouchableOpacity} from 'react-native';
 import SingleCardView from 'react-native-simple-card';
 import * as Progress from 'react-native-progress';
-import GridView, { SuperGridSectionList } from 'react-native-super-grid';
+import GridView, {SuperGridSectionList} from 'react-native-super-grid';
 
 class ListViewCurrentlyPlaying extends React.Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class ListViewCurrentlyPlaying extends React.Component {
         this.state = {
             data: props.data,
             position: 0.3,
-            name:props.name,
+            name: props.name,
         }
     }
 
@@ -21,35 +21,35 @@ class ListViewCurrentlyPlaying extends React.Component {
             <SuperGridSectionList
                 keyExtractor={(item, index) => item.key}
                 sections={[
-                    { title: this.state.name, data: this.state.data },
+                    {title: this.state.name, data: this.state.data},
 
                 ]}
-                renderItem={({ item }) => (
+                renderItem={({item}) => (
                     <Card
                         style={styles.card}>
                         <TouchableOpacity onPress={() => {
-                                item.audio.playAudio();
-                                this.setState({position: (item.audio.position * 100) / item.audio.duration});
-                            }
+                            item.audio.playAudio();
+                            this.setState({position: (item.audio.position * 100) / item.audio.duration});
+                        }
                         }>
 
-                            <Text style={{ padding: 10, fontSize: 14 }}>
+                            <Text style={{padding: 10, fontSize: 14}}>
                                 {item.name}
                             </Text>
 
                             {/* <Progress.Bar progress={(this.state.data[this.state.data.indexOf(item)].audio.position * 100) / this.state.data[this.state.data.indexOf(item)].audio.duration} width={125} /> */}
-                            <Progress.Bar progress={this.state.position} width={125} />
+                            <Progress.Bar progress={this.state.position} width={125}/>
                         </TouchableOpacity>
-                    </Card> 
+                    </Card>
                 )}
-                renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
+                renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
             />
         )
     }
 }
 
 const styles = StyleSheet.create({
-   sectionHeader: {
+    sectionHeader: {
         paddingTop: 12,
         paddingLeft: 10,
         paddingRight: 10,
@@ -58,6 +58,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
+        color: '#9e9e9e',
+
         height: 59
     },
     card: {
