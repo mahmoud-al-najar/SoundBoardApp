@@ -63,10 +63,10 @@ const styles = StyleSheet.create({
         paddingTop: 22,
     },
     sectionHeader: {
-       // paddingTop: 5,
-        paddingLeft: 10,
-        paddingRight: 10,
-        paddingBottom: 5,
+        // paddingTop: 5,
+        //paddingLeft: 10,
+        //paddingRight: 10,
+        //paddingBottom: 5,
         fontSize: 24,
         textAlign: 'center',
         justifyContent: 'center',
@@ -81,13 +81,13 @@ const styles = StyleSheet.create({
         margin: 10
     },
     gridView: {
-        paddingTop: 25,
+        //paddingTop: 25,
         flex: 1,
     },
     itemContainer: {
         justifyContent: 'flex-end',
         borderRadius: 5,
-        padding: 10,
+      //  padding: 10,
         height: 150,
     },
     itemName: {
