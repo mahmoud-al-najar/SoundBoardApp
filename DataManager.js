@@ -1,7 +1,6 @@
 import db from './assets/sounds/sounds.json';
 import { Audio } from 'expo';
 
-
 class DataManager {
     
     constructor(){
@@ -32,10 +31,13 @@ class AudioFile {
                     this.audio.setOnPlaybackStatusUpdate((status)=>{
                         this.duration = status.durationMillis;
                         this.position = status.positionMillis;
-                        console.log('Duration: '+ status.durationMillis + '   --  Position: ' + status.positionMillis);
+                        if (!status.isPlaying){
+                            this.audio.stopAsync();
+                            this.playing = false;                            
+                        }
                     })
                     this.playing = true;
-                    this.audio.setVolumeAsync(1.0);
+                    this.audio.setVolumeAsync(1.0); 
                 } catch (err) {
                     console.warn("Couldn't Play audio", err)
                 }
@@ -46,28 +48,14 @@ class AudioFile {
                     if (v > 0){
                         this.audio.setVolumeAsync(v);
                         
-                        
                     } else {
-                        this.audio.setPositionAsync(this.duration);
-                        clearInterval(fadeout);
+                        this.audio.stopAsync();
                         this.playing = false;
-                        this.audio.unloadAsync();
+                        clearInterval(fadeout);
                     }
                 }, 200);
             }
         }
-
-
-        // this._getPlaybackTimestamp() = () => {
-        //     if (
-        //       this.audio != null &&
-        //       this.state.soundPosition != null &&
-        //       this.state.soundDuration != null
-        //     ) {
-        //       return `${this._getMMSSFromMillis(this.state.soundPosition)} / ${this._getMMSSFromMillis(this.state.soundDuration)}`;
-        //     }
-        //     return '';
-        //   }
     }
 }
 
