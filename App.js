@@ -3,6 +3,7 @@ import {StyleSheet, Text, View, FlatList} from 'react-native';
 import {List, ListItem} from "react-native-elements";
 import SearchListView from "./components/SearchListView"
 import CardListView from "./components/CardListView";
+import GridPanel from "./components/GridPanel";
 
 export default class App extends React.Component {
 
@@ -45,7 +46,7 @@ export default class App extends React.Component {
                 <View style={{flex:0.6}}>
                     <CardListView data={this.state.data}/></View>
             </View>
-
+//<GridPanel />
 
         );
 
