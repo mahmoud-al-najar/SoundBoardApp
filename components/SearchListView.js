@@ -15,7 +15,6 @@ class SearchListView extends React.Component {
 
     }
 
-
     searchFilterFunction = text => {
         const newData = this.arrayholder.filter(item => {
             const itemData = `${item.name.toUpperCase()} ${item.filename.toUpperCase()} ${item.tagsText.toUpperCase()}`;
@@ -37,12 +36,9 @@ class SearchListView extends React.Component {
         );
     };
 
-
-
     render() {
         return (
-            <List>
-                <FlatList
+            <FlatList
                     data={this.state.data}
                     renderItem={({item}) => (
 
@@ -57,12 +53,9 @@ class SearchListView extends React.Component {
                     )}
                     ListHeaderComponent={this.renderHeader}
                 />
-            </List>
-
 
         );
     }
-
 
 }
 

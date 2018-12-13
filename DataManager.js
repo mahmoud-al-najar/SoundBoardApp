@@ -14,7 +14,28 @@ class DataManager {
             s.tagsText = '';
             s.tags.forEach(t => s.tagsText += t.name + ' ');
         });
+
         this.categoriesArray = this.db['categories'];
+        this.categoriesArray.forEach(c => {
+            c.sounds = this.soundsArray.filter(s => 
+                s.categories.includes(c.id)
+            );            
+        });
+
+        this.favoritesArray = this.db['favorites'];
+        this.favoritesArray.forEach(f => {
+            f.sounds = this.soundsArray.filter(s => 
+                s.url === f.url
+            );
+        });
+        
+        this.suggestionsArray = this.db['favorites'];
+        this.suggestionsArray.forEach(f => {
+            f.sounds = this.soundsArray.filter(s => 
+                s.url === f.url
+            );
+        });
+
     }
 }
 
@@ -28,6 +49,7 @@ class AudioFile {
         this.playAudio = async () => {
             if (!this.playing) {
                 try {
+                    this.audio = new Audio.Sound();
                     await this.audio.unloadAsync()
                     await this.audio.loadAsync({uri: path});
                     await this.audio.playAsync();

@@ -51,7 +51,7 @@ export default class App extends React.Component {
                     second: this.state.SecondRoute,
                 })}
                 onIndexChange={index => this.setState({ index })}
-                initialLayout={{ width: Dimensions.get('window').width, height: 10 }}
+                initialLayout={{ width: Dimensions.get('window').width, height: 0 }}
             />
         );
     }

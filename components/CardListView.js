@@ -66,14 +66,15 @@ const styles = StyleSheet.create({
         paddingTop: 22,
     },
     sectionHeader: {
-       // paddingTop: 5,
+        paddingTop: 13,
         paddingLeft: 10,
         paddingRight: 10,
-        paddingBottom: 5,
+        // paddingBottom: 5,
         fontSize: 24,
         textAlign: 'center',
         justifyContent: 'center',
-        backgroundColor: 'rgba(247,247,247,1.0)',
+        backgroundColor: '#fff',
+        height: 59
     },
     item: {
         flexDirection: 'column',
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
         margin: 10
     },
     gridView: {
-        paddingTop: 25,
+        paddingTop: 0,
         flex: 1,
     },
     itemContainer: {
