@@ -1,7 +1,6 @@
 import db from './assets/sounds/sounds.json';
 import {Audio} from 'expo';
 
-
 class DataManager {
 
     constructor() {
@@ -9,9 +8,11 @@ class DataManager {
         this.db = db;
         this.soundsArray = this.db['sounds'];
         this.soundsArray.forEach(s => {
-            s.audio = new AudioFile(s.filename, s.url);
+            //s.audio = new AudioFile(s.filename, s.url);
+            s.audio = new AudioFile(s.filename, 'https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg');
             s.key = s.filename + s.url;
-           
+            s.tagsText = '';
+            s.tags.forEach(t => s.tagsText += t.name + ' ');
         });
         this.categoriesArray = this.db['categories'];
     }
@@ -33,7 +34,11 @@ class AudioFile {
                     this.audio.setOnPlaybackStatusUpdate((status) => {
                         this.duration = status.durationMillis;
                         this.position = status.positionMillis;
-                        console.log('Duration: ' + status.durationMillis + '   --  Position: ' + status.positionMillis);
+                        if (!status.isPlaying) {
+                            this.audio.stopAsync();
+                            this.playing = false;
+                        }
+
                     })
                     this.playing = true;
                     this.audio.setVolumeAsync(1.0);
@@ -49,26 +54,13 @@ class AudioFile {
 
 
                     } else {
-                        this.audio.setPositionAsync(this.duration);
-                        clearInterval(fadeout);
+                        this.audio.stopAsync();
                         this.playing = false;
-                        this.audio.unloadAsync();
+                        clearInterval(fadeout);
                     }
                 }, 200);
             }
         }
-
-
-        // this._getPlaybackTimestamp() = () => {
-        //     if (
-        //       this.audio != null &&
-        //       this.state.soundPosition != null &&
-        //       this.state.soundDuration != null
-        //     ) {
-        //       return `${this._getMMSSFromMillis(this.state.soundPosition)} / ${this._getMMSSFromMillis(this.state.soundDuration)}`;
-        //     }
-        //     return '';
-        //   }
     }
 }
 
