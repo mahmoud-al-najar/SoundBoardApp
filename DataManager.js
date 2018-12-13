@@ -10,6 +10,8 @@ class DataManager {
         this.soundsArray.forEach(s => { 
             s.audio = new AudioFile(s.filename, s.url);
             s.key = s.filename + s.url;
+            s.tagsText = '';
+            s.tags.forEach(t => s.tagsText += t.name + ' ');
           });
         this.categoriesArray = this.db['categories'];
     }
