@@ -64,7 +64,7 @@ class AudioFile {
             } else {
                 let v = 1.0;
                 let fadeout = setInterval(() => {
-                    v = v - 0.1;
+                    v = v - 0.2;
                     if (v > 0) {
                         this.audio.setVolumeAsync(v);
 
