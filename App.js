@@ -20,12 +20,12 @@ export default class App extends React.Component {
                     <View style={{ flex: 0.4 }}>
                         <SearchListView data={this.state.data} /></View>
                     <View style={{ flex: 0.6 }}>
-                        <CardListView data={this.state.data} /></View>
+                        <CardListView name = 'Currently Playing' data={this.state.data} /></View>
                 </View>),
 
             SecondRoute: () => (
                 <View style={{ flex: 1 }}>
-                    <CardListView data={this.state.data} />
+                    <CardListView name ='Library' data={this.state.data} />
                 </View>
             ),
             routes: [

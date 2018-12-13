@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { List, ListItem, SearchBar } from "react-native-elements";
+import {StyleSheet, Text, View, FlatList} from 'react-native';
+import {List, ListItem, SearchBar} from "react-native-elements";
 
 class SearchListView extends React.Component {
     constructor(props) {
@@ -18,8 +18,7 @@ class SearchListView extends React.Component {
 
     searchFilterFunction = text => {
         const newData = this.arrayholder.filter(item => {
-            const itemData = `${item.f.toUpperCase()}   
-    ${item.f.toUpperCase()} ${item.l.toUpperCase()}`;
+            const itemData = `${item.name.toUpperCase()} ${item.filename.toUpperCase()} ${item.tagsText.toUpperCase()}`;
             const textData = text.toUpperCase();
 
             return itemData.indexOf(textData) > -1;
@@ -38,18 +37,21 @@ class SearchListView extends React.Component {
         );
     };
 
+
+
     render() {
         return (
             <List>
                 <FlatList
                     data={this.state.data}
                     renderItem={({item}) => (
+
                         <ListItem
                             keyExtractor={item => item.key}
-                            title={item.f}
-                            subtitle={item.l}
+                            title={item.name}
+                            //subtitle={item.tagsText}
                             roundAvatar
-                            avatar={item.image}
+                            //avatar={item.image}
                             onPress={() => alert('clicked')}
                         />
                     )}

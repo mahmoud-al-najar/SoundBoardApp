@@ -14,6 +14,7 @@ class CardListView extends React.Component {
         this.state = {
             data: props.data,
             position: 0.3,
+            name:props.name,
         }
     }
 
@@ -23,9 +24,8 @@ class CardListView extends React.Component {
                 keyExtractor={(item, index) => item.key}
                 itemDimension={130}
                 sections={[
-                    { title: 'Category 1', data: this.state.data },
-                    { title: 'Category 2', data: this.state.data },
-                    { title: 'Category 3', data: this.state.data },
+                    { title: this.state.name, data: this.state.data },
+
                 ]}
 
                 style={styles.gridView}
