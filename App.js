@@ -42,7 +42,7 @@ export default class App extends React.Component {
                     <CardListView name ='Animals' data={this.state.dataManager.categoriesArray[1].sounds} />
                     <CardListView name ='People' data={this.state.dataManager.categoriesArray[2].sounds} />
                     <CardListView name ='Vehicules' data={this.state.dataManager.categoriesArray[3].sounds} />
-                    <CardListView name ='Objects' data={this.state.dataManager.categoriesArray[3].sounds} />
+                    <CardListView name ='Objects' data={this.state.dataManager.categoriesArray[4].sounds} />
 
                 </ScrollView>
 
