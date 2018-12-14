@@ -23,22 +23,24 @@ class CardListView extends React.Component {
         this.state.data.forEach(item => {
             
             views.push(
-                <Card style={styles.card} key={item.url}>
+                <TouchableOpacity key={item.url} onPress={() => {
+                    item.audio.playAudio();
+                    this.setState({ position: (item.audio.position * 100) / item.audio.duration });
+                }}>
+                <Card style={styles.card}>
                     <Icon
                         name={item.icon}
                         color='#00aced'
                         size = {50}
 
                     />
-                    <TouchableOpacity onPress={() => {
-                        item.audio.playAudio();
-                        this.setState({ position: (item.audio.position * 100) / item.audio.duration });
-                    }}>
+                    
                         <Text style={{ padding: 10, fontSize: 16 }}>
                             {item.name}
                         </Text>
-                    </TouchableOpacity>
+                    
                 </Card>
+                </TouchableOpacity>
             )
         });
         return (

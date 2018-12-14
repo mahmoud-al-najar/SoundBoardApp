@@ -1,615 +1,473 @@
 {
-  "sounds": [
-    {
-      "filename": "airplane-flyby.wav",
-      "url": "https://actions.google.com/sounds/v1/transportation/helicopter_by.ogg",
-      "name": "Airplane Flyby",
-      "categories": [
-        1,
-        4
-      ],
-      "icon": "flight-takeoff",
-      "tags": [
-        {
-          "name": "aiplane"
-        },
-        {
-          "name": "flying"
-        },
-        {
-          "name": "airport"
-        },
-        {
-          "name": "aiplane"
-        }
-      ]
-    },
-    {
-      "filename": "ambience-busy-bar.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1iyLf92Vf2pJcAfw2lTntQD8jIzDRPfvO",
-      "name": "Busy Bar",
-      "categories": [
-        1,
-        3
-      ],
-      "icon": "people-outline",
-      "tags": [
-        {
-          "name": "bar"
-        },
-        {
-          "name": "people"
-        },
-        {
-          "name": "drink"
-        },
-        {
-          "name": "ambience"
-        }
-      ]
-    },
-    {
-      "filename": "ambience-busy-street.mp3",
-      "url": "https://actions.google.com/sounds/v1/crowds/voices_on_street_accent.ogg",
-      "name": "Busy Street",
-      "categories": [
-        1,
-        4
-      ],
-      "icon": "people",
-      "tags": [
-        {
-          "name": "cars"
-        },
-        {
-          "name": "busy"
-        },
-        {
-          "name": "street"
-        },
-        {
-          "name": "ambience"
-        }
-      ]
-    },
-    {
-      "filename": "battle-zone.wav",
-      "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
-      "name": "Celebration",
-      "categories": [
-        1,
-        3,
-        5
-      ],
-      "icon":"insert-emoticon",
-      "tags": [
-        {
-          "name": "happy"
-        },
-        {
-          "name": "celebrate"
-        },
-        {
-          "name": "people"
-        }
-
-      ]
-    },
-    {
-      "filename": "car-alarm.wav",
-      "url": "http://docs.google.com/uc?export=open&id=19I7QT1E-5O13u6ddzeK3z1Sw_hdvOpM0",
-      "name": "Car Alarm",
-      "categories": [
-        4,
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "alarm"
-        },
-        {
-          "name": "car"
-        },
-        {
-          "name": "accident"
-        },
-        {
-          "name": "crash"
-        }
-      ]
-    },
-    {
-      "filename": "car-crash.wav",
-      "url": "http://docs.google.com/uc?export=open&id=11lfLA9ng5kDOc1jVcPrb-O5YWkjpbC7M",
-      "name": "Car Crash",
-      "categories": [
-        3,
-        4
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "alarm"
-        },
-        {
-          "name": "car"
-        },
-        {
-          "name": "accident"
-        },
-        {
-          "name": "crash"
-        }
-      ]
-    },
-    {
-      "filename": "cat-meow-2.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1KtTYNHhLaqUqJsSg9EvUPWAr4JgIMXp8",
-      "name": "Cat Meow 2",
-      "categories": [
-        2
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "animal"
-        },
-        {
-          "name": "cat"
-        },
-        {
-          "name": "meow"
-        },
-        {
-          "name": "kitten"
-        }
-      ]
-    },
-    {
-      "filename": "cat-meow.wav",
-      "url": "http://docs.google.com/uc?export=open&id=11PfQkbOMTF5wVxOaw6yTzfElrI0qDZi7",
-      "name": "Cat Meow",
-      "categories": [
-        2
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "animal"
-        },
-        {
-          "name": "cat"
-        },
-        {
-          "name": "meow"
-        },
-        {
-          "name": "kitten"
-        }
-      ]
-    },
-    {
-      "filename": "clap.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1cK4I5qJHtPxIM-rCF16ewaupvOqpqiJU",
-      "name": "Crowd Clapping",
-      "icon": "play-circle-filled",
-      "categories": [
-        3
-      ],
-      "tags": [
-        {
-          "name": "crowd"
-        },
-        {
-          "name": "audience"
-        },
-        {
-          "name": "clap"
-        },
-        {
-          "name": "theater"
-        }
-      ]
-    },
-    {
-      "filename": "crowd-boo.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1TpfFNHZnBuXFP_701IVFsYKzfxu_JPPY",
-      "name": "Crowd Boo",
-      "categories": [
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "crowd"
-        },
-        {
-          "name": "audience"
-        },
-        {
-          "name": "boo"
-        },
-        {
-          "name": "theater"
-        }
-      ]
-    },
-    {
-      "filename": "crowd-laugh.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1psb8JppTRwUsnF10nHJpgoO9Pqtp1vgE",
-      "name": "Crowd Laugh",
-      "categories": [
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "crowd"
-        },
-        {
-          "name": "audience"
-        },
-        {
-          "name": "laugh"
-        },
-        {
-          "name": "theater"
-        }
-      ]
-    },
-    {
-      "filename": "demonstration.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1AI913R7XaBhDi56OUFVisC7BcNCsH5fk",
-      "name": "Demonstration",
-      "categories": [
-        1,
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "crowd"
-        },
-        {
-          "name": "people"
-        },
-        {
-          "name": "shout"
-        },
-        {
-          "name": "demonstration"
-        }
-      ]
-    },
-    {
-      "filename": "dog-bark.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1fpjJkFjwnPS2-VRoz-weNNTI200WSVtI",
-      "name": "Dog Barking",
-      "icon": "play-circle-filled",
-      "categories": [
-        2
-      ],
-      "tags": [
-        {
-          "name": "animal"
-        },
-        {
-          "name": "dog"
-        },
-        {
-          "name": "puppy"
-        },
-        {
-          "name": "bark"
-        }
-      ]
-    },
-    {
-      "filename": "gun-m16-burst.mp3",
-      "url": "http://docs.google.com/uc?export=open&id=1dlARSzxxbGB8LjHafxNdjf9kEAeNb-RG",
-      "name": "Gun M16",
-      "categories": [
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "war"
-        },
-        {
-          "name": "gun"
-        },
-        {
-          "name": "battle"
-        },
-        {
-          "name": "military"
-        }
-      ]
-    },
-    {
-      "filename": "horn-bus.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1iTT7E1CDZaJ9060cx2rY1LeHREGDkgyl",
-      "name": "Bus Horn",
-      "categories": [
-        4,
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "bus"
-        },
-        {
-          "name": "horn"
-        },
-        {
-          "name": "traffic"
-        },
-        {
-          "name": "accident"
-        }
-      ]
-    },
-    {
-      "filename": "horn-car.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1URkYMGhJgWs9mlCtUAXjwaif2P4HwsQr",
-      "name": "Car Horn",
-      "categories": [
-        4,
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "car"
-        },
-        {
-          "name": "horn"
-        },
-        {
-          "name": "traffic"
-        },
-        {
-          "name": "accident"
-        }
-      ]
-    },
-    {
-      "filename": "icecream-truck.mp3",
-      "url": "http://docs.google.com/uc?export=open&id=18UPdLqngzPlEYgBmCa_PrObB-pKI0Opv",
-      "name": "Icecream Truck Horn",
-      "categories": [
-        4,
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "bus"
-        },
-        {
-          "name": "truck"
-        },
-        {
-          "name": "icecream"
-        },
-        {
-          "name": "horn"
-        }
-      ]
-    },
-    {
-      "filename": "laugh-crazy-man.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1dzUytMatoUj445zdM4Vyf9Nit4GEd41o",
-      "name": "Crazy Laugh",
-      "categories": [
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "creepy"
-        },
-        {
-          "name": "laugh"
-        },
-        {
-          "name": "evil"
-        },
-        {
-          "name": "crazy"
-        }
-      ]
-    },
-    {
-      "filename": "laugh-evil.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1IXDxU3uE3-ssT13r2r6CNMgNnZ-Uqedf",
-      "name": "Evil Laugh",
-      "categories": [
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "creepy"
-        },
-        {
-          "name": "laugh"
-        },
-        {
-          "name": "evil"
-        },
-        {
-          "name": "crazy"
-        }
-      ]
-    },
-    {
-      "filename": "machinegun.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1Qj45B4GFCBjZwx3qPCGU0Q2YDRHRcdTP",
-      "name": "Machine Gun",
-      "categories": [
-        5
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "war"
-        },
-        {
-          "name": "gun"
-        },
-        {
-          "name": "battle"
-        },
-        {
-          "name": "military"
-        }
-      ]
-    },
-    {
-      "filename": "motorcycle.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1dYnCWrPxLFHc-FFw5jULBFRvK3VjLvn2",
-      "name": "Motorbike",
-      "categories": [
-        4
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "motorcycle"
-        },
-        {
-          "name": "driveby"
-        },
-        {
-          "name": "fast"
-        },
-        {
-          "name": "speed"
-        }
-      ]
-    },
-    {
-      "filename": "police-siren.mp3",
-      "url": "http://docs.google.com/uc?export=open&id=1tiv65IoCVcjrBgwaW_WVSKgWVwmEF8-M",
-      "name": "Police Siren",
-      "categories": [
-        4
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "car"
-        },
-        {
-          "name": "police"
-        },
-        {
-          "name": "siren"
-        },
-        {
-          "name": "alarm"
-        }
-      ]
-    },
-    {
-      "filename": "traffic.aiff",
-      "url": "http://docs.google.com/uc?export=open&id=13J-UW8E2Z9HEt4b3BPIHfXRN5ZyK6IqA",
-      "name": "Traffic Jam",
-      "categories": [
-        4,
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "bus"
-        },
-        {
-          "name": "truck"
-        },
-        {
-          "name": "car"
-        },
-        {
-          "name": "traffic"
-        }
-      ]
-    },
-    {
-      "filename": "sheep-bleating.wav",
-      "url": "http://docs.google.com/uc?export=open&id=1nPccj-SDjWZixdfYTri0XhHY6XvPdXWL",
-      "name": "Sheep Bleating",
-      "categories": [
-        2,
-        3
-      ],
-      "icon": "play-circle-filled",
-      "tags": [
-        {
-          "name": "animal"
-        },
-        {
-          "name": "sheep"
-        },
-        {
-          "name": "shepherd"
-        },
-        {
-          "name": "bleat"
-        }
-      ]
-    }
-  ],
-  "categories": [
-    {
-      "name": "Ambiences",
-      "id": 1
-    },
-    {
-      "name": "Animals",
-      "id": 2
-    },
-    {
-      "name": "People",
-      "id": 3
-    },
-    {
-      "name": "Vehicules",
-      "id": 4
-    },
-    {
-      "name": "Objects",
-      "id": 5
-    }
-  ],
-  "favorites": [
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1iyLf92Vf2pJcAfw2lTntQD8jIzDRPfvO"
-    },
-    {
-      "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1tiv65IoCVcjrBgwaW_WVSKgWVwmEF8-M"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1IXDxU3uE3-ssT13r2r6CNMgNnZ-Uqedf"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1nPccj-SDjWZixdfYTri0XhHY6XvPdXWL"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=13J-UW8E2Z9HEt4b3BPIHfXRN5ZyK6IqA"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1dYnCWrPxLFHc-FFw5jULBFRvK3VjLvn2"
-    },
-    {
-      "url": "http://docs.google.com/uc?export=open&id=1dzUytMatoUj445zdM4Vyf9Nit4GEd41o"
-    }
-  ]
+   "sounds": [
+      {
+         "filename": "airplane-flyby.wav",
+         "url": "https://actions.google.com/sounds/v1/transportation/helicopter_by.ogg",
+         "name": "Airplane Flyby",
+         "categories": [
+            1,
+            4
+         ],
+         "icon": "flight-takeoff",
+         "tags": [
+            {
+               "name": "aiplane"
+            },
+            {
+               "name": "flying"
+            },
+            {
+               "name": "airport"
+            },
+            {
+               "name": "aiplane"
+            }
+         ]
+      },
+      {
+         "filename": "ambience-busy-bar.wav",
+         "url": "https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg",
+         "name": "Busy Coffee Shop",
+         "categories": [
+            1,
+            3
+         ],
+         "icon": "people-outline",
+         "tags": [
+            {
+               "name": "coffee"
+            },
+            {
+               "name": "shop"
+            },
+            {
+               "name": "people"
+            },
+            {
+               "name": "drink"
+            },
+            {
+               "name": "ambience"
+            }
+         ]
+      },
+      {
+         "filename": "ambience-busy-street.mp3",
+         "url": "https://actions.google.com/sounds/v1/crowds/voices_on_street_accent.ogg",
+         "name": "Busy Street",
+         "categories": [
+            1,
+            4
+         ],
+         "icon": "people",
+         "tags": [
+            {
+               "name": "cars"
+            },
+            {
+               "name": "busy"
+            },
+            {
+               "name": "street"
+            },
+            {
+               "name": "ambience"
+            }
+         ]
+      },
+      {
+         "filename": "celebration.wav",
+         "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
+         "name": "Celebration",
+         "categories": [
+            1,
+            3,
+            5
+         ],
+         "icon": "insert-emoticon",
+         "tags": [
+            {
+               "name": "happy"
+            },
+            {
+               "name": "celebrate"
+            },
+            {
+               "name": "people"
+            }
+         ]
+      },
+      {
+         "filename": "car-crash.wav",
+         "url": "https://actions.google.com/sounds/v1/impacts/glass_windows_crashing.ogg",
+         "name": "Car Crash",
+         "categories": [
+            3,
+            4
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "alarm"
+            },
+            {
+               "name": "car"
+            },
+            {
+               "name": "accident"
+            },
+            {
+               "name": "crash"
+            }
+         ]
+      },
+      {
+         "filename": "mouse-squeaking.wav",
+         "url": "https://actions.google.com/sounds/v1/animals/mouse_squeaking.ogg",
+         "name": "Mouse Squeaking",
+         "categories": [
+            2
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "animal"
+            },
+            {
+               "name": "cat"
+            },
+            {
+               "name": "meow"
+            },
+            {
+               "name": "kitten"
+            }
+         ]
+      },
+      {
+         "filename": "person-clapping.wav",
+         "url": "https://actions.google.com/sounds/v1/foley/hand_claps_close.ogg",
+         "name": "Person Clapping",
+         "icon": "play-circle-filled",
+         "categories": [
+            3
+         ],
+         "tags": [
+            {
+               "name": "person"
+            },
+            {
+               "name": "creepy"
+            },
+            {
+               "name": "clap"
+            }
+         ]
+      },
+      {
+         "filename": "pool-table.wav",
+         "url": "https://actions.google.com/sounds/v1/sports/pool_table_break.ogg",
+         "name": "Pool Table Break",
+         "categories": [
+            3
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "play"
+            },
+            {
+               "name": "break"
+            },
+            {
+               "name": "sport"
+            },
+            {
+               "name": "pool"
+            }
+         ]
+      },
+      {
+         "filename": "man-laugh.wav",
+         "url": "https://actions.google.com/sounds/v1/human_voices/man_laugh_and_knee_slap.ogg",
+         "name": "Man Laugh",
+         "categories": [
+            3
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "man"
+            },
+            {
+               "name": "person"
+            },
+            {
+               "name": "laugh"
+            },
+            {
+               "name": "creepy"
+            }
+         ]
+      },
+      {
+         "filename": "angry-crowd.wav",
+         "url": "https://actions.google.com/sounds/v1/crowds/voices_angry.ogg",
+         "name": "Angry Crowd",
+         "categories": [
+            1,
+            3
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "crowd"
+            },
+            {
+               "name": "people"
+            },
+            {
+               "name": "shout"
+            },
+            {
+               "name": "angry"
+            }
+         ]
+      },
+      {
+         "filename": "dog-bark.wav",
+         "url": "https://actions.google.com/sounds/v1/animals/dog_barking.ogg",
+         "name": "Dog Barking",
+         "icon": "play-circle-filled",
+         "categories": [
+            2
+         ],
+         "tags": [
+            {
+               "name": "animal"
+            },
+            {
+               "name": "dog"
+            },
+            {
+               "name": "puppy"
+            },
+            {
+               "name": "bark"
+            }
+         ]
+      },
+      {
+         "filename": "big_gun_shots_close.mp3",
+         "url": "https://actions.google.com/sounds/v1/weapons/big_gun_shots_close.ogg",
+         "name": "Gun Shots",
+         "categories": [
+            5
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "war"
+            },
+            {
+               "name": "gun"
+            },
+            {
+               "name": "battle"
+            },
+            {
+               "name": "military"
+            }
+         ]
+      },
+      {
+         "filename": "clown-horn.wav",
+         "url": "https://actions.google.com/sounds/v1/cartoon/clown_horn.ogg",
+         "name": "Clown Horn",
+         "categories": [
+            4,
+            5
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "person"
+            },
+            {
+               "name": "horn"
+            },
+            {
+               "name": "crazy"
+            },
+            {
+               "name": "clown"
+            }
+         ]
+      },
+      {
+         "filename": "horn-car.wav",
+         "url": "https://actions.google.com/sounds/v1/transportation/motorcycle_horn.ogg",
+         "name": "Car Horn",
+         "categories": [
+            4,
+            5
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "car"
+            },
+            {
+               "name": "horn"
+            },
+            {
+               "name": "traffic"
+            },
+            {
+               "name": "accident"
+            }
+         ]
+      },
+      {
+         "filename": "machinegun.wav",
+         "url": "https://actions.google.com/sounds/v1/weapons/vulcan_machine_gun_series.ogg",
+         "name": "Machine Gun",
+         "categories": [
+            5
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "war"
+            },
+            {
+               "name": "gun"
+            },
+            {
+               "name": "battle"
+            },
+            {
+               "name": "military"
+            }
+         ]
+      },
+      {
+         "filename": "motorcycle.wav",
+         "url": "https://actions.google.com/sounds/v1/transportation/aggressive_motorcycle.ogg",
+         "name": "Motorcycle Engine",
+         "categories": [
+            4
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "motorcycle"
+            },
+            {
+               "name": "driveby"
+            },
+            {
+               "name": "fast"
+            },
+            {
+               "name": "speed"
+            }
+         ]
+      },
+      {
+         "filename": "emergency-siren.mp3",
+         "url": "https://actions.google.com/sounds/v1/emergency/emergency_siren_close_long.ogg",
+         "name": "Emergency Siren",
+         "categories": [
+            4
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "car"
+            },
+            {
+               "name": "police"
+            },
+            {
+               "name": "siren"
+            },
+            {
+               "name": "alarm"
+            }
+         ]
+      },
+      {
+         "filename": "traffic.aiff",
+         "url": "https://actions.google.com/sounds/v1/transportation/city_traffic.ogg",
+         "name": "City Traffic",
+         "categories": [
+            4,
+            3
+         ],
+         "icon": "play-circle-filled",
+         "tags": [
+            {
+               "name": "bus"
+            },
+            {
+               "name": "truck"
+            },
+            {
+               "name": "car"
+            },
+            {
+               "name": "traffic"
+            }
+         ]
+      }
+   ],
+   "categories": [
+      {
+         "name": "Ambiences",
+         "id": 1
+      },
+      {
+         "name": "Animals",
+         "id": 2
+      },
+      {
+         "name": "People",
+         "id": 3
+      },
+      {
+         "name": "Vehicules",
+         "id": 4
+      },
+      {
+         "name": "Objects",
+         "id": 5
+      }
+   ],
+   "favorites": [
+      {
+         "url": "https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/emergency/emergency_siren_close_long.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/transportation/motorcycle_horn.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/weapons/vulcan_machine_gun_series.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/transportation/city_traffic.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/transportation/aggressive_motorcycle.ogg"
+      },
+      {
+         "url": "https://actions.google.com/sounds/v1/weapons/big_gun_shots_close.ogg"
+      }
+   ]
 }
