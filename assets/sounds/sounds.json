@@ -5,29 +5,28 @@
          "url": "https://actions.google.com/sounds/v1/transportation/helicopter_by.ogg",
          "name": "Airplane Flyby",
          "categories": [
-            1,
             4
          ],
          "icon": "flight-takeoff",
          "tags": [
             {
-               "name": "aiplane"
+               "name": "plane"
             },
             {
-               "name": "flying"
+               "name": "engine"
             },
             {
                "name": "airport"
             },
             {
-               "name": "aiplane"
+               "name": "fly"
             }
          ]
       },
       {
          "filename": "ambience-busy-bar.wav",
          "url": "https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg",
-         "name": "Busy Coffee Shop",
+         "name": "Coffee Shop",
          "categories": [
             1,
             3
@@ -62,7 +61,7 @@
          "icon": "people",
          "tags": [
             {
-               "name": "cars"
+               "name": "people"
             },
             {
                "name": "busy"
@@ -108,7 +107,7 @@
          "icon": "play-circle-filled",
          "tags": [
             {
-               "name": "alarm"
+               "name": "break"
             },
             {
                "name": "car"
@@ -124,7 +123,7 @@
       {
          "filename": "mouse-squeaking.wav",
          "url": "https://actions.google.com/sounds/v1/animals/mouse_squeaking.ogg",
-         "name": "Mouse Squeaking",
+         "name": "Mouse",
          "categories": [
             2
          ],
@@ -134,27 +133,24 @@
                "name": "animal"
             },
             {
-               "name": "cat"
+               "name": "mouse"
             },
             {
-               "name": "meow"
-            },
-            {
-               "name": "kitten"
+               "name": "squeak"
             }
          ]
       },
       {
          "filename": "person-clapping.wav",
          "url": "https://actions.google.com/sounds/v1/foley/hand_claps_close.ogg",
-         "name": "Person Clapping",
+         "name": "Person Clap",
          "icon": "play-circle-filled",
          "categories": [
             3
          ],
          "tags": [
             {
-               "name": "person"
+               "name": "people"
             },
             {
                "name": "creepy"
@@ -167,7 +163,7 @@
       {
          "filename": "pool-table.wav",
          "url": "https://actions.google.com/sounds/v1/sports/pool_table_break.ogg",
-         "name": "Pool Table Break",
+         "name": "Pool Table",
          "categories": [
             3
          ],
@@ -207,6 +203,9 @@
             },
             {
                "name": "creepy"
+            },
+            {
+               "name": "people"
             }
          ]
       },
@@ -237,7 +236,7 @@
       {
          "filename": "dog-bark.wav",
          "url": "https://actions.google.com/sounds/v1/animals/dog_barking.ogg",
-         "name": "Dog Barking",
+         "name": "Dog Bark",
          "icon": "play-circle-filled",
          "categories": [
             2
@@ -277,6 +276,9 @@
             },
             {
                "name": "military"
+            },
+            {
+               "name": "shot"
             }
          ]
       },
@@ -291,7 +293,7 @@
          "icon": "play-circle-filled",
          "tags": [
             {
-               "name": "person"
+               "name": "people"
             },
             {
                "name": "horn"
@@ -325,6 +327,9 @@
             },
             {
                "name": "accident"
+            },
+            {
+               "name": "honk"
             }
          ]
       },
@@ -348,13 +353,16 @@
             },
             {
                "name": "military"
+            },
+            {
+               "name": "shot"
             }
          ]
       },
       {
          "filename": "motorcycle.wav",
          "url": "https://actions.google.com/sounds/v1/transportation/aggressive_motorcycle.ogg",
-         "name": "Motorcycle Engine",
+         "name": "Engine",
          "categories": [
             4
          ],
@@ -364,20 +372,20 @@
                "name": "motorcycle"
             },
             {
-               "name": "driveby"
+               "name": "engine"
             },
             {
-               "name": "fast"
+               "name": "loud"
             },
             {
-               "name": "speed"
+               "name": "bike"
             }
          ]
       },
       {
          "filename": "emergency-siren.mp3",
          "url": "https://actions.google.com/sounds/v1/emergency/emergency_siren_close_long.ogg",
-         "name": "Emergency Siren",
+         "name": "Emergency",
          "categories": [
             4
          ],
@@ -387,13 +395,16 @@
                "name": "car"
             },
             {
-               "name": "police"
+               "name": "emergency"
             },
             {
                "name": "siren"
             },
             {
                "name": "alarm"
+            },
+            {
+               "name": "horn"
             }
          ]
       },
@@ -418,6 +429,9 @@
             },
             {
                "name": "traffic"
+            },
+            {
+               "name": "horn"
             }
          ]
       }
